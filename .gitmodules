@@ -1,0 +1,3 @@
+[submodule "SagiJudge"]
+	path = SagiJudge
+	url = https://github.com/Myeongchan-Kim/SagiJudge.git

@@ -54,7 +54,7 @@ var page = {
     dataNodes : [],
     width : 800, height : 500,     // window size
     date_txt_pos : new GeoPoint(680, 500),
-    endDateString : '2020-05-12',
+    endDateString : '2020-05-12',  // TODO: 날짜 최대값을 받아서 사용하도록 변경
     startDateString : "2020-02-22",
     svg : null,
     imgs : null,

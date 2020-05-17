@@ -136,3 +136,9 @@ htmlcov/
 
 # Garbatge file of Mac
 .DS_Store
+
+# Flask config files
+config.py
+
+# Data files
+data/

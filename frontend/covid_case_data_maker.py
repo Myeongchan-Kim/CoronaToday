@@ -9,6 +9,7 @@ def data_pull():
     os.system("git pull origin master")
     os.chdir("../frontend")
 
+
 def convert_data_file(src_filepath, dst_filepath):
     df = pd.read_csv(src_filepath, dtype=str)
     df = df.rename(columns={"Lat": "Lat_", "Long_": "Long_"})
@@ -22,6 +23,9 @@ if __name__ == "__main__":
 
     src_filepath = "../COVID-19/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv"
     dst_filepath = "../frontend/data/time_series_covid19_confirmed_US.csv"
+
+    if not os.path.isdir(os.path.dirname(dst_filepath)):
+        os.mkdir(os.path.dirname(dst_filepath))
 
     convert_data_file(src_filepath, dst_filepath)
 

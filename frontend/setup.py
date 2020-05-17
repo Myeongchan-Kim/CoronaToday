@@ -16,8 +16,8 @@ def convert_data_file(src_filepath, dst_filepath):
     df.to_csv(dst_filepath, index=None)
     print("Successfully saved a file : {}".format(dst_filepath))
 
-if __name__ == "__main__":
 
+def setup_run():
     # Update the latest data
     data_pull()
 
@@ -29,3 +29,8 @@ if __name__ == "__main__":
 
     convert_data_file(src_filepath, dst_filepath)
 
+    os.system("echo SECRET_KEY= > config.py")
+
+
+if __name__ == "__main__":
+    setup_run()

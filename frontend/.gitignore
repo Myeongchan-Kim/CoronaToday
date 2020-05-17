@@ -139,3 +139,6 @@ htmlcov/
 
 # Flask config files
 config.py
+
+# Data files
+data/

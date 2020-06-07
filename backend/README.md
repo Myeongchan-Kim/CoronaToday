@@ -9,7 +9,7 @@ Run Application.Java
 ### Using CLI on Mac
 ```shell
 $ brew install gradle
-$ gradle wrapper --gradle-version 4.10
+$ gradle wrapper --gradle-version 4.10.2
 $ ./gradlew build
 $ ./gradlew bootRun
 ```

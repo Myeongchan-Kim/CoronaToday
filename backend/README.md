@@ -11,6 +11,6 @@ Run Application.Java
 $ brew install gradle
 $ gradle wrapper --gradle-version 4.10
 $ ./gradlew build
-
+$ ./gradlew bootRun
 ```
 
